@@ -50,27 +50,35 @@ public class GuessGame {
             
             if(guessP1 == targetNumber){
                 p1isRight = true;
-                
+                //System.out.println("And the winner is: " + p1);
                 
             }
             if(guessP2 == targetNumber){
                 p2isRight = true;
-                
+                //System.out.println("And the winner is: "+ p2);
                 
             }
             if(guessP3 == targetNumber){
                 p3isRight = true;
-                
+                //System.out.println("And the winner is: "+ p3);
             }
-            if(p1isRight||p2isRight||p3isRight){
-                System.out.println("And the winner is: "+ p3);
-                System.out.println("And the winner is: "+ p2);
-                System.out.println("And the winner is: " + p1);
+            if(p1isRight||p2isRight||p3isRight){   
+                System.out.println("Who has won! ");
+                if(p1isRight){
+                    System.out.println(p1);
+                }
+                if(p2isRight){
+                    System.out.println(p2);
+                }
+                if(p3isRight){
+                    System.out.println(p3);
+                }
                 break;
             }
             else{
                 System.out.println("Players will have to try again");
             }
+            
         }
     }
 }
