@@ -17,10 +17,16 @@ public class JavaApplication17 {
      * @param args the command line arguments
      */
     
-    
-    /**
+   
     public static void main(String[] args) {
         // TODO code application logic here
+        Dog[] pets;
+        pets = new Dog[7];
+        pets[0] = new Dog();
+        pets[1] = new Dog();
+        
+        
+        /**
         Movie one = new Movie();
         one.setTitle("Gone with the wind");
         one.setGenre("Tradic");
