@@ -10,11 +10,17 @@ package StartProgram;
  * @author Rene
  */
 public class Dog {
-    int size;
-    String breed;
     String name;
-    
+    String breed;
+    int size;
+     
     void bark(){
-        //System.out.println("woef, woef");
+        System.out.println("woef, woef");
     }    
+
+    @Override
+    public String toString() {
+        return "Dog " + "name= " + name + ", breed= " + breed + ", size= " + size;
+    }
+    
 }

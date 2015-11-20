@@ -12,6 +12,7 @@ import javax.management.Query;
  * @author Rene
  */
 public class JavaApplication17 {
+    
 
     /**
      * @param args the command line arguments
@@ -20,11 +21,27 @@ public class JavaApplication17 {
    
     public static void main(String[] args) {
         // TODO code application logic here
-        Dog[] pets;
-        pets = new Dog[7];
+        Dog[] pets = new Dog[3];
+        
         pets[0] = new Dog();
         pets[1] = new Dog();
+        pets[2] = new Dog();
         
+        pets[0].name = "fiffy";
+        pets[0].breed = "Hound";
+        pets[0].size = 10;
+        
+        pets[1].name = "Rakker";
+        pets[1].breed = "Vuilnis";
+        pets[1].size = 8;
+        
+        pets[2].name = "Lobbes";
+        pets[2].breed = "Sintbernard";
+        pets[2].size = 15;
+        
+        System.out.println(pets[0].toString()+ 
+                " \n" + pets[1].toString()+
+                "\n" + pets[2].toString());
         
         /**
         Movie one = new Movie();
