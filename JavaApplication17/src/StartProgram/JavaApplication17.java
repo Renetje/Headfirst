@@ -21,6 +21,44 @@ public class JavaApplication17 {
    
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        // make a dog object and access it
+        
+        
+        
+        // page 62 chapter 3
+        Dog dog1 = new Dog();
+        dog1.name = "Bart";
+        dog1.bark();
+        
+        //Now make a dog arry
+        Dog[] myDogs = new Dog[3];
+        //and put som dogs in it
+        myDogs[0] = new Dog();
+        myDogs[1] = new Dog();
+        myDogs[2] = dog1;
+        
+        //now access the dog using the array
+        //references
+        myDogs[0].name = "Fred";
+        myDogs[1].name = "Marge";
+        
+        //mydogs[2] name is Bart
+        System.out.println("The last dogs name is ");
+        System.out.println(myDogs[2].name);
+        
+        //now loop through the array
+        // and the all dogs to bark
+        
+        int x = 0;
+        while(x < myDogs.length){
+            //System.out.println(myDogs[x].name + " says ");
+            myDogs[x].bark();
+            x++;
+        }
+        
+        
+        /**
         Dog[] pets = new Dog[3];
         
         pets[0] = new Dog();

@@ -10,12 +10,13 @@ package StartProgram;
  * @author Rene
  */
 public class Dog {
+    
     String name;
     String breed;
     int size;
      
     void bark(){
-        System.out.println("woef, woef");
+        System.out.println(name+ " says: woef, woef \n");
     }    
 
     @Override

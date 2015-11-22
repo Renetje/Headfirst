@@ -8,6 +8,7 @@ package StartProgram;
 /**
  *
  * @author Rene
+ * 
  */
 public class Movie {
     private String title;
