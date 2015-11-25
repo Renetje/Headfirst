@@ -13,7 +13,7 @@ import javax.management.Query;
  */
 public class JavaApplication17 {
     
-
+    
     /**
      * @param args the command line arguments
      */
@@ -22,10 +22,12 @@ public class JavaApplication17 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        // make a dog object and access it
         
         
         
+        /*
+        // make a dog object and access it        
+               
         // page 62 chapter 3
         Dog dog1 = new Dog();
         dog1.name = "Bart";
